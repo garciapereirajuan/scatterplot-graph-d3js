@@ -1,0 +1,89 @@
+.AppScatterplotGraph{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: #81c3d7;
+    overflow-y: hidden;
+}
+
+.AppScatterplotGraph .scatterplot-graph{
+    margin:0;
+    padding: 0;
+    width: 817.5px;
+    background: #343a40;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,.4),
+    0px 4px 8px rgba(0,0,0,.2);
+    padding: 0 10px;
+    overflow-y: hidden;
+}
+
+.AppScatterplotGraph .container{
+    width: 817.5px;
+    height: 100vh;
+    margin: auto;
+}
+  
+.AppScatterplotGraph .title,
+.AppScatterplotGraph .subtitle{
+    width: 817.5px;
+    height: 40px;
+    font-size: 1.4em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Helvetica";
+}
+
+.AppScatterplotGraph .subtitle a{
+    padding: 4px 6px;
+    color: white;
+    background: #343a40;
+    font-weight: 400;
+    /* text-decoration: none; */
+    border-radius: 10px;
+}
+
+.AppScatterplotGraph .subtitle{
+    font-size: 1em;
+}
+  
+.AppScatterplotGraph #x-axis, 
+.AppScatterplotGraph #y-axis{
+    font-size: .7em;
+    font-weight: bold;
+    color: #61a5c2f5;
+} 
+  
+.AppScatterplotGraph .dot{
+    cursor: pointer;
+     -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+  
+.AppScatterplotGraph .box{
+    stroke-width: 1.5px;
+    fill: #4f7cac;
+}
+  
+.AppScatterplotGraph .textBox::selection, 
+.AppScatterplotGraph tspan::selection{
+    background: orange;
+    fill: #343a40;
+}
+  
+.AppScatterplotGraph .legend{
+    fill: white;
+    font-weight: bold;
+    font-size: .7em;
+    text-anchor: end;
+}
+
+@media (min-width: 817.5px){
+    .AppScatterplotGraph{
+        align-items: center;
+    }
+}
+  
