@@ -4,7 +4,7 @@
 
 #
 
-##### See App.js
+##### View App.js
 
 #
 
